@@ -1,0 +1,5 @@
+{
+  "name": "CodeFox",
+  "description": "An interactive, real-time coding tutor powered by the Gemini API. It helps users practice coding, get instant AI-powered debugging assistance, and clarify doubts across multiple programming languages like Python, Java, and C++.",
+  "requestFramePermissions": []
+}

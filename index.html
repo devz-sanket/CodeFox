@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeFox</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'primary': {
+                '50': '#f0faff',
+                '100': '#e0f3ff',
+                '200': '#b9e7ff',
+                '300': '#7ccfff',
+                '400': '#36b4ff',
+                '500': '#079aff',
+                '600': '#007fff',
+                '700': '#006deb',
+                '800': '#0058b8',
+                '900': '#004c96',
+                '950': '#002c5c',
+              },
+            },
+            keyframes: {
+              'slide-in-bottom': {
+                '0%': { transform: 'translateY(10px)', opacity: '0' },
+                '100%': { transform: 'translateY(0)', opacity: '1' },
+              },
+              'shimmer': {
+                '0%': { background-position: '200% 0' },
+                '100%': { background-position: '-200% 0' },
+              },
+              'fade-in': {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+            },
+            animation: {
+              'slide-in-bottom': 'slide-in-bottom 0.4s ease-out',
+              'shimmer': 'shimmer 3s infinite linear',
+              'fade-in': 'fade-in 0.5s ease-in-out',
+            },
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.16.0",
+    "monaco-editor": "https://aistudiocdn.com/monaco-editor@^0.52.2",
+    "@monaco-editor/react": "https://aistudiocdn.com/@monaco-editor/react@^4.7.0",
+    "react-split": "https://aistudiocdn.com/react-split@^2.0.14"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
